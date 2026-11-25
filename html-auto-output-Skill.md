@@ -7,11 +7,10 @@ Once this skill is loaded and enabled, for **every subsequent round of user ques
 > Trigger determination: as long as the skill is enabled, regardless of what the user asks (code, copywriting, Q&A, story, table, summary, problem solving, etc.), the response content must be wrapped as a complete HTML document that can be saved and opened directly; plain-text answers must no longer be output.
 
 ## Fixed Output Format Requirements
-1. The first line of the output must carry the fixed marker: `[HTML File Output]` (HTML file output)
-2. Then provide the hint text: You can copy all the code below, save it as xxx.html, and open it directly in a browser to view.
-3. Wrap the complete HTML source in a ```html code block; inside the block is a complete HTML document, including `<!DOCTYPE html>`
-4. Do not attach large blocks of explanatory text about the answer itself outside the code block; the entire body of the answer goes inside the HTML
-5. Suggested file name: generated automatically based on the conversation topic, for example `answer.html`, `notes.html`, `proposal.html`
+1. Output the complete HTML code directly, without any other prompt text.
+2. Wrap the complete HTML source in a ```html code block; inside the block is a complete HTML document, including `<!DOCTYPE html>`
+3. Do not attach large blocks of explanatory text about the answer itself outside the code block; the entire body of the answer goes inside the HTML
+4. Suggested file name: generated automatically based on the conversation topic, for example `answer.html`, `notes.html`, `proposal.html`
 
 ## Mandatory HTML Page Specification
 - Structure: standard html > head > body
